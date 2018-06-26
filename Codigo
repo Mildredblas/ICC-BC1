@@ -22,11 +22,34 @@ if d==1 or d==2 or d==3 or d==4 or d==5 or d==5 or d==6 or d==7:
 else:
     print("Ingrese un número de la semana")
 
-
-print("Te gusto el menu de hoy, Conteste S (sí) o N (no)")
-primera= input()
+print("Te gusto el menu de hoy?.")
+print("Conteste S (sí) o N (no) a mis preguntas.")
+primera = input("El desayuno fue de tu agrado? ")
 if primera == "S":
-      S = input("Disfruta tu menú :) ")
+    segunda = input("Buen probecho")
 else:
-    print("Añada uno nuevo ;) ")
+    segunda = input("Danos tu sugerencia ")
+    if segunda == "S":
+        print("Buen probecho.")
+    else:
+        print("Vuelva otro dia")
+primera = input("El Almuerzo fue de tu agrado? ")
+if primera == "S":
+    segunda = input("Buen probecho")
+else:
+    segunda = input("Danos tu sugerencia ")
+    if segunda == "S":
+        print("Buen probecho.")
+    else:
+        print("Vuelva otro dia")
+primera = input("El cena fue de tu agrado? ")
+if primera == "S":
+    segunda = input("Buen probecho")
+else:
+    segunda = input("Danos tu sugerencia ")
+    if segunda == "S":
+        print("Buen probecho.")
+    else:
+        print("Vuelva otro dia")
+
 print("¡Hasta la próxima!")
