@@ -1,55 +1,49 @@
 import random
-d=int(input("Ingrese número de día de la semana: "))
-almuerzos=["Arroz con pollo","Seco de frejoles", "Carapulcra"]
-desayunos=["jugo de fresa","jugo de naranja", "jugo de surtido"]
-cenas=["te","anís","cafe"]
+import os
+print("BIENVENIDO BLASCALLEJA RESTAURANT")
+print("1:Menu para todo un dia" )
+print("2:Solo el desayuno")
+print("3: Solo el almuerzo")
+print("4:Solo la cena")
+opcion=int(input("Elija la opción: "))
+d=2
+if opcion==1:
+    almuerzos=["Arroz con pollo","Seco de frejoles", "Carapulcra"]
+    desayunos=["jugo de fresa","jugo de naranja", "jugo de surtido"]
+    cenas=["te","anís","cafe"]
+    Diccionarios={}
+    while d !=0:
+        d=int(input("Ingrese número de día de la semana: "))
+        Diccionarios={1:almuerzos,2:desayunos,3:cenas}
 
-Diccionarios={}
-Diccionarios={1:almuerzos,2:desayunos,3:cenas}
-
-Diccionarios[1] =(random.choice(almuerzos))
-Diccionarios[2]=(random.choice(desayunos))
-Diccionarios[3]=(random.choice(cenas))
-
-def receta2():
-           print("Almuerzo:",Diccionarios[1])
-           print("Desayuno:", Diccionarios[2])
-           print("Cena:",Diccionarios[3])
+        Diccionarios[1] =(random.choice(almuerzos))
+        Diccionarios[2]=(random.choice(desayunos))
+        Diccionarios[3]=(random.choice(cenas))
+        def receta2():
+                   print("Almuerzo:",Diccionarios[1])
+                   print("Desayuno:", Diccionarios[2])
+                   print("Cena:",Diccionarios[3])
 
 
-if d==1 or d==2 or d==3 or d==4 or d==5 or d==5 or d==6 or d==7:
-    receta2()
-else:
-    print("Ingrese un número de la semana")
+        if d==1 or d==2 or d==3 or d==4 or d==5 or d==5 or d==6 or d==7:
+            receta2()
+        else:
+            print("Ingrese un número de la semana")
 
-print("Te gusto el menu de hoy?.")
-print("Conteste S (sí) o N (no) a mis preguntas.")
-primera = input("El desayuno fue de tu agrado? ")
-if primera == "S":
-    segunda = input("Buen probecho")
-else:
-    segunda = input("Danos tu sugerencia ")
-    if segunda == "S":
-        print("Buen probecho.")
-    else:
-        print("Vuelva otro dia")
-primera = input("El Almuerzo fue de tu agrado? ")
-if primera == "S":
-    segunda = input("Buen probecho")
-else:
-    segunda = input("Danos tu sugerencia ")
-    if segunda == "S":
-        print("Buen probecho.")
-    else:
-        print("Vuelva otro dia")
-primera = input("El cena fue de tu agrado? ")
-if primera == "S":
-    segunda = input("Buen probecho")
-else:
-    segunda = input("Danos tu sugerencia ")
-    if segunda == "S":
-        print("Buen probecho.")
-    else:
-        print("Vuelva otro dia")
 
-print("¡Hasta la próxima!")
+        print("Te gusto el menu de hoy, Conteste S (sí) o N (no)")
+        primera= input()
+        if primera == "S":
+              S = input("Disfruta tu menú :) ")
+        else:
+            almuerzos.append(input("Añada uno nuevo:  "))
+
+        print("¡Hasta la próxima!")
+
+        print(almuerzos)
+        os.system('cls')
+    print(almuerzos)
+elif opcion==2:
+    from random import choice
+    print("desayuno:",choice(["pan","cafe","cereal"]))
+if opcion==3:
