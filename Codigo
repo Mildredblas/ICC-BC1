@@ -29,6 +29,7 @@ if opcion==1:
             receta2()
         else:
             print("Ingrese un número de la semana")
+if opcion==3:
 
 
         print("Te gusto el menu de hoy, Conteste S (sí) o N (no)")
@@ -46,4 +47,3 @@ if opcion==1:
 elif opcion==2:
     from random import choice
     print("desayuno:",choice(["pan","cafe","cereal"]))
-if opcion==3:
