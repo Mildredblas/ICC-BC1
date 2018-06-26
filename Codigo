@@ -1,3 +1,28 @@
+import random
+d=int(input("Ingrese número de día de la semana: "))
+almuerzos=["Arroz con pollo","Seco de frejoles", "Carapulcra"]
+desayunos=["jugo de fresa","jugo de naranja", "jugo de surtido"]
+cenas=["te","anís","cafe"]
+
+Diccionarios={}
+Diccionarios={1:almuerzos,2:desayunos,3:cenas}
+
+Diccionarios[1] =(random.choice(almuerzos))
+Diccionarios[2]=(random.choice(desayunos))
+Diccionarios[3]=(random.choice(cenas))
+
+def receta2():
+           print("Almuerzo:",Diccionarios[1])
+           print("Desayuno:", Diccionarios[2])
+           print("Cena:",Diccionarios[3])
+
+
+if d==1 or d==2 or d==3 or d==4 or d==5 or d==5 or d==6 or d==7:
+    receta2()
+else:
+    print("Ingrese un número de la semana")
+
+
 print("Te gusto el menu de hoy, Conteste S (sí) o N (no)")
 primera= input()
 if primera == "S":
