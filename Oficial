@@ -29,6 +29,7 @@ if opcion==1:
             receta2()
         else:
             print("Ingrese un número de la semana")
+if opcion==2:
 
 
         print("Te gusto el menu de hoy, Conteste S (sí) o N (no)")
@@ -42,7 +43,15 @@ if opcion==1:
 
         print(almuerzos)
         os.system('cls')
-    print(almuerzos)
-else:
-    print("a")
+        print(almuerzos)
+elif opcion==2:
+    from random import choice
+    print("desayuno:",choice(["pan","cafe","cereal"]))
+if opcion==3:
+    from random import choice
+    print("Almuerzo:",choice(["Arroz a la cubana","lomo","Arroz con pollo"]))
+if opcion==4:
+    from random import choice
+    print("cena:",choice(["Leche","Agua","sopa con pollo"]))
+
 
