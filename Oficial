@@ -8,9 +8,9 @@ print("4:Solo la cena")
 opcion=int(input("Elija la opción: "))
 d=2
 if opcion==1:
-    almuerzos=["Arroz con pollo","Seco de frejoles", "Carapulcra"]
-    desayunos=["jugo de fresa","jugo de naranja", "jugo de surtido"]
-    cenas=["te","anís","cafe"]
+    almuerzos=["Arroz con pollo","Seco de frejoles", "Carapulcra", "Aji de gallina", "Arroz con pato","Pollo al maní","Seco de cordero","ceviche","sopa seca", "pescado frito","ceviche de pota","tallarin rojo", "tallarines verdes", "tallarin saltado","mostrito","lomo saltado"]
+    desayunos=["jugo de fresa","7 semillas","quinia","avena","juego especial","juego de chirimolla",""maca","Quaker""jugo de naranja", "jugo de surtido"]
+    cenas=["te","anís","cafe","sopa de menudencias","pollo a la brasa","chicharon","anticuchos","pan con pollo","Pollo broaster","Chifa"]
     Diccionarios={}
     while d !=0:
         d=int(input("Ingrese número de día de la semana: "))
@@ -41,7 +41,7 @@ if opcion==1:
 
 elif opcion==2:
     from random import choice
-    l=["pan","cafe","cereal"]
+    l=["jugo de fresa","7 semillas","quinia","avena","juego especial","juego de chirimolla",""maca","Quaker""jugo de naranja", "jugo de surtido"]
     print("desayuno:",choice(l))
     X=input("¿Te gusto el desayono de hoy S (sí), N (no)?")
     if X =="S":
@@ -53,7 +53,7 @@ elif opcion==2:
 
 if opcion==3:
     from random import choice
-    l=["Arroz a la cubana","lomo","Arroz con pollo"]
+    l=["Arroz con pollo","Seco de frejoles", "Carapulcra", "Aji de gallina", "Arroz con pato","Pollo al maní","Seco de cordero","ceviche","sopa seca", "pescado frito","ceviche de pota","tallarin rojo", "tallarines verdes", "tallarin saltado","mostrito","lomo saltado"]
     print("Almuerzo:",choice(l))
     X = input("¿Te gusto el almuerzo de hoy S (sí), N (no)?")
     if X == "S":
@@ -64,7 +64,7 @@ if opcion==3:
         print("Disfruta tu almuerzo", Y)
 if opcion==4:
     from random import choice
-    l=["Leche","Agua","sopa con pollo"]
+    l=["te","anís","cafe","sopa de menudencias","pollo a la brasa","chicharon","anticuchos","pan con pollo","Pollo broaster","Chifa""]
     print("cena:",choice(l))
     X = input("¿Te gusto la cena de hoy S (sí), N (no)?")
     if X == "S":
