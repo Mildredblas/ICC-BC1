@@ -39,8 +39,6 @@ if opcion==1:
 
         print("¡Hasta la próxima!")
 
-      
-
 elif opcion==2:
     from random import choice
     l=["pan","cafe","cereal"]
@@ -55,10 +53,23 @@ elif opcion==2:
 
 if opcion==3:
     from random import choice
-    print("Almuerzo:",choice(["Arroz a la cubana","lomo","Arroz con pollo"]))
-    X = input("¿Te gusto el desayono de hoy S (sí), N (no)?")
+    l=["Arroz a la cubana","lomo","Arroz con pollo"]
+    print("Almuerzo:",choice(l))
+    X = input("¿Te gusto el almuerzo de hoy S (sí), N (no)?")
     if X == "S":
-        print("Disfruta tu Almuerzo")
+        print("Disfruta tu almuerzo")
+    else:
+        Y = input("Agregue uno nuevo")
+        l.append(Y)
+        print("Disfruta tu almuerzo", Y)
 if opcion==4:
     from random import choice
-    print("cena:",choice(["Leche","Agua","sopa con pollo"]))
+    l=["Leche","Agua","sopa con pollo"]
+    print("cena:",choice(l))
+    X = input("¿Te gusto la cena de hoy S (sí), N (no)?")
+    if X == "S":
+        print("Disfruta tu cena")
+    else:
+        Y = input("Agregue uno nuevo")
+        l.append(Y)
+        print("Disfruta tu cena", Y)
